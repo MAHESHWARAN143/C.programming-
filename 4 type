@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+/* 1. No Argument, No Return (NANR) */
+void fun1()
+{
+    printf("Hello from NANR\n");
+}
+
+/* 2. Argument, No Return (ANR) */
+void fun2(int a)
+{
+    printf("Number = %d\n", a);
+}
+
+/* 3. No Argument, With Return (NAWR) */
+int fun3()
+{
+    return 10;
+}
+
+/* 4. Argument, With Return (AWR) */
+int fun4(int a, int b)
+{
+    return a + b;
+}
+
+int main()
+{
+    int result;
+
+    fun1();              // NANR
+
+    fun2(20);            // ANR
+
+    result = fun3();     // NAWR
+    printf("Result = %d\n", result);
+
+    result = fun4(10, 20); // AWR
+    printf("Sum = %d\n", result);
+
+    return 0;
+}
